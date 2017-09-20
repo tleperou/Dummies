@@ -1,0 +1,76 @@
+body.reveal-open {
+  overflow: hidden;
+}
+
+.doc-viewer.reveal {
+  width: 100%;
+  max-width: 75rem;
+  background: transparent;
+  border: none;
+  top: 40px !important;
+
+  .page {
+    border: none;
+    box-shadow: 0 8px 15px 0 $black;
+    margin-bottom: $global-margin/2;
+  }
+}
+
+.pdf-js .reveal-overlay.open {
+  &, .reveal {
+    display: block;
+  }
+}
+
+.reveal-overlay .toolbar {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.66);
+
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, height 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, height 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
+
+  height: rem-calc(50px);
+
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  background: #dd4b39;
+  left: 0;
+  z-index: 99999;
+  overflow: hidden;
+
+  ul > li > a {
+    padding: $gutter;
+    color: $color-light;
+    margin: $gutter/2;
+    text-transform: capitalize;
+  }
+
+  .button {
+    background-color: darken($color-primary, 5%);
+
+    &:hover, &:focus, &:active {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 15px;
+    margin: 5px;
+    background: darken($color-primary, 15%);
+    &:hover {
+      background-color: darken($color-primary, 20%);
+    }
+  }
+}
+
+body > * {
+  visiblity: hidden;
+
+  .pdfViewer {
+    display: block;
+  }
+}

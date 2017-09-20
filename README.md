@@ -1,6 +1,22 @@
+# Resume
+
+Please find my resume in the repo.
+
 # Dummies
 
 Dummy projects and/or extracted code from projects.
+
+I use many times [machine-to-action](https://github.com/sailshq/machine-as-action). Some pieces come from a SailsJS project.
+
+The only frontend code is doc-viewer (extract from an EmberJS app).
+
+## doc-viewer
+
+A simple EmberJS component which gets a PDF from an API, and render as HTML result toward the front with a blacked background. I use here generators to wrap promises (amazing control over promises).
+
+* component.js - the component
+* style.scss - the css applied to that component
+* template.hbs - the handlebar template
 
 ## commands
 
